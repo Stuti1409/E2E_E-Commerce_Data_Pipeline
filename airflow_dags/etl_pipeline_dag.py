@@ -1,5 +1,5 @@
 from airflow import DAG
-from airflow.providers.snowflake.operators.snowflake import SnowflakeOperator
+from airflow.providers import SnowflakeOperator
 from datetime import datetime
 
 default_args = {"start_date": datetime(2024, 1, 1)}
